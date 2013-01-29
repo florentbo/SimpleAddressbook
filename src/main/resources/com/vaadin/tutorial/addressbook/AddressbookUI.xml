@@ -3,7 +3,7 @@
     example. In order to turn this XML file into Vaadin component 
     instances, an add-on called Clara is used.
     
-    Original SimpleAddressBook:
+    Original SimpleAddressbook:
     https://github.com/jojule/SimpleAddressbook
     
     Clara add-on for Vaadin:

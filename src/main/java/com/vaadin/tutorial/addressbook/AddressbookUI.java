@@ -5,6 +5,7 @@ import org.vaadin.teemu.clara.binder.annotation.UiDataSource;
 import org.vaadin.teemu.clara.binder.annotation.UiField;
 import org.vaadin.teemu.clara.binder.annotation.UiHandler;
 
+import com.vaadin.annotations.Title;
 import com.vaadin.data.Container.Filter;
 import com.vaadin.data.Item;
 import com.vaadin.data.Property.ValueChangeEvent;
@@ -26,6 +27,7 @@ import com.vaadin.ui.UI;
  * embed your UI to an existing web page. 
  */
 @SuppressWarnings({ "serial", "unchecked" })
+@Title("Addressbook")
 public class AddressbookUI extends UI {
 
     /* User interface components are stored in session. */

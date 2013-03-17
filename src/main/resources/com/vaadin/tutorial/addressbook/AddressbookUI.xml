@@ -9,11 +9,11 @@
     Clara add-on for Vaadin:
     https://vaadin.com/addon/clara
 -->
-<HorizontalSplitPanel xmlns:l="urn:vaadin:layout">
+<HorizontalSplitPanel xmlns:l="urn:vaadin:parent">
 
     <!-- Left side layout - the contact list -->
-    <VerticalLayout width="100%" height="100%">
-        <Table id="contactList" selectable="true" immediate="true" width="100%" height="100%" l:expandRatio="1.0" />
+    <VerticalLayout sizeFull="">
+        <Table id="contactList" selectable="true" immediate="true" sizeFull="" l:expandRatio="1.0" />
 
         <!-- Controls in the footer -->
         <HorizontalLayout width="100%">

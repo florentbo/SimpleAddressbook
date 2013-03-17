@@ -12,7 +12,6 @@ import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.data.util.IndexedContainer;
 import com.vaadin.event.FieldEvents.TextChangeEvent;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.ui.AbstractTextField.TextChangeEventMode;
 import com.vaadin.ui.Button;
 import com.vaadin.ui.Button.ClickEvent;
 import com.vaadin.ui.FormLayout;
@@ -73,7 +72,6 @@ public class AddressbookUI extends UI {
 
         initContactList();
         initEditor();
-        initSearch();
     }
 
     private void initEditor() {
@@ -97,19 +95,6 @@ public class AddressbookUI extends UI {
          * changes automatically without calling commit().
          */
         editorFields.setBuffered(false);
-    }
-
-    private void initSearch() {
-        /*
-         * Granularity for sending events over the wire can be controlled. By
-         * default simple changes like writing a text in TextField are sent to
-         * server with the next Ajax call. You can set your component to be
-         * immediate to send the changes to server immediately after focus
-         * leaves the field. Here we choose to send the text over the wire as
-         * soon as user stops writing for a moment.
-         */
-        // TODO Setting the TextChangeEventMode not currently supported by Clara
-        searchField.setTextChangeEventMode(TextChangeEventMode.LAZY);
     }
 
     @UiHandler("searchField")

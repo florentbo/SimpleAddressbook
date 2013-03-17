@@ -17,7 +17,7 @@
 
         <!-- Controls in the footer -->
         <HorizontalLayout width="100%">
-            <TextField id="searchField" inputPrompt="Search contacts" width="100%" l:expandRatio="1.0" />
+            <TextField id="searchField" inputPrompt="Search contacts" width="100%" l:expandRatio="1.0" textChangeEventMode="LAZY" />
             <Button id="newContactButton" caption="New" />
         </HorizontalLayout>
     </VerticalLayout>

@@ -78,7 +78,7 @@ public class AddressbookUI extends UI {
 
     private void initEditor() {
         /* User interface can be created dynamically to reflect underlying data. */
-        int index = 0;
+        int index = 1;
         for (String fieldName : fieldNames) {
             TextField field = new TextField(fieldName);
             editorLayout.addComponent(field, index++);

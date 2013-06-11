@@ -1,11 +1,11 @@
-<!-- 
+<!--
     This is a declarative version of the Vaadin 7 SimpleAddressbook
-    example. In order to turn this XML file into Vaadin component 
+    example. In order to turn this XML file into Vaadin component
     instances, an add-on called Clara is used.
-    
+
     Original SimpleAddressbook:
-    https://github.com/jojule/SimpleAddressbook
-    
+    https://github.com/vaadin/addressbook
+
     Clara add-on for Vaadin:
     https://vaadin.com/addon/clara
 -->

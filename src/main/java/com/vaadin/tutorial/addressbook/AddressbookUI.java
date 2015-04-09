@@ -32,7 +32,7 @@ import javax.servlet.annotation.WebServlet;
 public class AddressbookUI extends UI {
 
 	/**
-	 * Vaadin applications are basically just Serlvlets, so lets define one with
+	 * Vaadin applications are basically just Servlets, so lets define one with
 	 * Servlet 3.0 style. Naturally you can use the plain old web.xml file as
 	 * well.
 	 */

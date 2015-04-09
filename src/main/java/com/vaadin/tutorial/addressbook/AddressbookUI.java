@@ -21,30 +21,28 @@ import com.vaadin.ui.VerticalLayout;
 import java.util.Arrays;
 import javax.servlet.annotation.WebServlet;
 
-/* 
- * UI class is the starting point for your app. You may deploy it with VaadinServlet
- * or VaadinPortlet by giving your UI class name a parameter. When you browse to your
- * app a web page showing your UI is automatically generated. Or you may choose to 
- * embed your UI to an existing web page. 
+/*
+ * UI class. This is the starting point for your app.
  */
 @Title("Addressbook")
 @Theme("valo")
 public class AddressbookUI extends UI {
 
+
 	/**
-	 * Vaadin applications are basically just Servlets, so lets define one with
-	 * Servlet 3.0 style. Naturally you can use the plain old web.xml file as
-	 * well.
-	 */
+ 	 * Servlet. Vaadin applications are basically just Servlets extending the
+ 	 * VaadinServlet, so lets define one with Servlet 3.0 style. Naturally you
+ 	 * can use web.xml file as well. The important thing here is to define your
+ 	 * UI class name a parameter.
+ 	 */
 	@WebServlet(urlPatterns = "/*")
 	@VaadinServletConfiguration(ui = AddressbookUI.class, productionMode = false)
 	public static class MyUIServlet extends VaadinServlet {
 	}
 
-	/*
-	 * ContactService mimics a real world DAO, that you'd typically implement as
-	 * EJB or Spring Data based service.
-	 */
+
+	// ContactService mimics a real world DAO, that you'd typically implement as
+	// EJB or Spring Data based service.
 	private ContactService service = ContactService.createDemoService();
 
 	private TextField filter = new TextField();
@@ -54,14 +52,11 @@ public class AddressbookUI extends UI {
 
 	private ContactForm contactForm = new ContactForm(this);
 
+
 	/**
-	 * The UI.init is the "public static void main(String... args)" for your
-	 * Vaadin application. It is the entry point method executed for each user
-	 * who enters your application.
-	 *
-	 * @param request
-	 *            the request object contains some low level web request data
-	 *            that you can typically ignore.
+	 * Init method. The UI.init is the "public static void main(String... args)"
+	 * for your Vaadin application. It is the entry point method executed for
+	 * each user who enters your application.
 	 */
 	@Override
 	protected void init(VaadinRequest request) {

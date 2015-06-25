@@ -1,5 +1,6 @@
 package com.vaadin.tutorial.addressbook;
 
+import com.vaadin.spring.annotation.SpringUI;
 import org.vaadin.teemu.clara.Clara;
 import org.vaadin.teemu.clara.binder.annotation.UiDataSource;
 import org.vaadin.teemu.clara.binder.annotation.UiField;
@@ -26,6 +27,8 @@ import com.vaadin.ui.UI;
  * app a web page showing your UI is automatically generated. Or you may choose to 
  * embed your UI to an existing web page. 
  */
+
+@SpringUI
 @SuppressWarnings({ "serial", "unchecked" })
 @Title("Addressbook")
 public class AddressbookUI extends UI {

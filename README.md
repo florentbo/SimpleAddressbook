@@ -9,7 +9,7 @@ The fork you are currently looking at is modified to work as a demonstration of 
 the user interface in a declarative fashion. To achieve this we are using the 
 [Clara](https://vaadin.com/addon/clara) add-on.
 
-This new fork integrate Spring boot
+This new fork integrate Spring boot and all his advantages
 
 
 Running the example
